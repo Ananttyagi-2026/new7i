@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NEWS7i</title><meta name="description" content="NEWS7i - latest news and blogs"><meta name="theme-color" content="#fff7ec">
+<style>
+:root{--bg:#fff7ec;--sf:#fff;--tx:#231a12;--mu:#7a6a5a;--ac:#e8620c;--bd:#ecd9c3;--sh:0 6px 20px rgba(80,40,0,.08)}
+[data-theme=dark]{--bg:#12100e;--sf:#1d1a17;--tx:#f4ece3;--mu:#a99b8c;--ac:#ff8a3d;--bd:#352f29;--sh:0 6px 20px rgba(0,0,0,.4)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:16px/1.55 Georgia,"Times New Roman",serif;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.sans,header,nav,.btn,small,.ct,.chips,.strip,footer,input{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+#intro{position:fixed;inset:0;z-index:99;background:#1a0f06;display:grid;place-items:center;transition:opacity .6s,visibility .6s}
+#intro.out{opacity:0;visibility:hidden}
+#intro .lg{font:900 clamp(2.5rem,12vw,6rem)/1 system-ui;color:#fff;letter-spacing:.04em;display:flex}
+#intro b{opacity:0;transform:translateY(30px);animation:up .6s forwards;animation-delay:calc(var(--i)*.12s)}
+#intro b:nth-child(5),#intro b:nth-child(6){color:#ff8a3d}
+#intro p{position:absolute;bottom:38%;color:#ffd08a;font:1rem system-ui;opacity:0;animation:up .6s 1s forwards}
+#sk{position:absolute;right:20px;bottom:20px;background:#ffffff22;color:#fff;border:0;padding:8px 16px;border-radius:99px}
+@keyframes up{to{opacity:1;transform:none}}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:14px;padding:10px 20px}
+.logo{font:900 1.6rem system-ui;color:var(--ac);letter-spacing:.02em}
+nav{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}
+nav a{padding:7px 13px;border-radius:99px;white-space:nowrap;font-size:.92rem;color:var(--mu)}
+nav a:hover{color:var(--tx)}nav a.on{background:var(--ac);color:#fff}
+.ib{background:var(--sf);border:1px solid var(--bd);color:var(--tx);width:38px;height:38px;border-radius:50%;font-size:1.05rem}
+main{max-width:1180px;margin:0 auto;padding:22px 18px 50px;min-height:70vh}
+h1.ttl{font-size:clamp(1.6rem,4vw,2.4rem);margin:6px 0 16px}
+.strip{display:flex;align-items:center;background:var(--sf);border:1px solid var(--bd);border-radius:10px;overflow:hidden;margin-bottom:22px}
+.strip b{background:var(--ac);color:#fff;padding:9px 14px;white-space:nowrap}
+.mq{overflow:hidden;flex:1}.mq span{display:inline-block;white-space:nowrap;padding-left:100%;animation:mq 40s linear infinite}
+.mq a{margin-right:40px;font-size:.92rem}.mq:hover span{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-100%)}}
+.sc{margin-top:34px}.sc>h2{font-size:1.4rem;margin-bottom:14px;display:flex;justify-content:space-between;align-items:baseline}
+.sc>h2 a{font:.85rem system-ui;color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh);transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.im{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#ffb36b,#e8620c);overflow:hidden}
+.im img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{width:100%;height:100%;display:grid;place-items:center;color:#fff;font:900 1.4rem system-ui;opacity:.85}
+.bd{position:absolute;left:10px;top:10px;background:var(--ac);color:#fff;font:700 .72rem system-ui;padding:4px 9px;border-radius:99px}
+.cb{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.ct{color:var(--ac);font-size:.82rem;font-weight:700}
+.cb h3{font-size:1.1rem;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cb p{color:var(--mu);font-size:.93rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+.cb small{color:var(--mu)}
+.btn{background:var(--ac);color:#fff;border:0;padding:8px 16px;border-radius:8px;font-weight:600;font-size:.88rem;align-self:flex-start;margin-top:auto;display:inline-block}
+.btn.g{background:transparent;color:var(--tx);border:1px solid var(--bd)}
+.top{display:grid;grid-template-columns:1.25fr 1fr;border-radius:18px;overflow:hidden;background:var(--sf);border:1px solid var(--bd);box-shadow:var(--sh)}
+.top .im{aspect-ratio:auto;min-height:340px}
+.top .cb{padding:28px;gap:12px;justify-content:center}
+.top h3{font-size:clamp(1.5rem,3vw,2.2rem);-webkit-line-clamp:4}
+.top p{font-size:1.02rem;-webkit-line-clamp:5}
+.duo .card{flex-direction:row}.duo .im{width:42%;aspect-ratio:auto;min-height:190px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips a{background:var(--sf);border:1px solid var(--bd);padding:9px 16px;border-radius:99px}
+.chips a:hover{border-color:var(--ac);color:var(--ac)}
+.trs{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.tr{display:flex;gap:12px;align-items:center;background:var(--sf);border:1px solid var(--bd);padding:12px;border-radius:12px}
+.nm{font:900 1.6rem system-ui;color:var(--ac)}.tr h4{font-size:1rem;line-height:1.3}.tr small{color:var(--mu)}
+.ar{max-width:780px;margin:0 auto}.ar h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.2;margin:8px 0}
+.ar .im{border-radius:14px;margin:18px 0}.bd2{font-size:1.1rem;line-height:1.8}.bd2 p,.bd2 ul{margin-bottom:1em}.bd2 ul{padding-left:1.3em}
+.tgs{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap;font-family:system-ui}.tgs a{background:var(--sf);border:1px solid var(--bd);padding:4px 12px;border-radius:99px;font-size:.85rem}
+.si{width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:1rem;margin-bottom:20px}
+.em{text-align:center;color:var(--mu);padding:50px 10px}
+.spin{width:38px;height:38px;border:4px solid var(--bd);border-top-color:var(--ac);border-radius:50%;animation:sp 1s linear infinite;margin:40px auto}
+@keyframes sp{to{transform:rotate(360deg)}}
+.sk{min-height:300px;background:linear-gradient(90deg,var(--sf),var(--bd),var(--sf));background-size:200%;animation:sh 1.4s infinite}
+@keyframes sh{to{background-position:-200%}}
+footer{text-align:center;color:var(--mu);padding:30px;border-top:1px solid var(--bd)}
+[hidden]{display:none!important}
+@media(max-width:760px){.top,.duo{grid-template-columns:1fr}.top .im{min-height:220px}.duo .card{flex-direction:column}.duo .im{width:100%;min-height:0;aspect-ratio:16/9}header{flex-wrap:wrap}nav{order:3;flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}#intro b,#intro p{opacity:1;transform:none}}
+</style></head><body>
+<div id="intro"><div class="lg"><b style="--i:0">N</b><b style="--i:1">E</b><b style="--i:2">W</b><b style="--i:3">S</b><b style="--i:4">7</b><b style="--i:5">i</b></div><p>Fast. Fresh. Futuristic.</p><button id="sk">Skip ›</button></div>
+<header id="hd" hidden><a class="logo" href="#/">NEWS7i</a><nav id="nav"></nav><button class="ib" id="th" aria-label="Toggle night and light mode">🌙</button></header>
+<main id="m"><div class="spin"></div></main>
+<footer id="ft" hidden><div class="logo">NEWS7i</div><p>Fast. Fresh. Futuristic news &amp; blogs.</p><small>© NEWS7i</small></footer>
+<script>
+const JSON_URL="news.json";
+const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const IC={AI:"🤖",Business:"📈",Education:"🎓",Sports:"🏆",Technology:"💻",Health:"🩺",Travel:"✈️",Entertainment:"🎬",Science:"🔬",India:"🇮🇳",World:"🌍"},ic=c=>(IC[c]||"📰")+" ";
+const MO="Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" "),fd=d=>{const[y,m,x]=String(d).split("-");return MO[m-1]?`${x.slice(0,2)} ${MO[m-1]} ${y}`:""};
+const im=(u,a)=>u?`<img src="${esc(u)}" alt="${esc(a)}" loading="lazy" referrerpolicy="no-referrer">`:`<div class="ph">NEWS7i</div>`;
+document.addEventListener("error",e=>{if(e.target.tagName=="IMG"){const d=document.createElement("div");d.className="ph";d.textContent="NEWS7i";e.target.replaceWith(d)}},true);
+
+/* theme */
+const root=document.documentElement,th=$("#th");
+const setTheme=t=>{root.dataset.theme=t;th.textContent=t=="dark"?"☀️":"🌙";try{localStorage.setItem("n7theme",t)}catch{}};
+let saved;try{saved=localStorage.getItem("n7theme")}catch{}
+setTheme(saved||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"));
+th.onclick=()=>setTheme(root.dataset.theme=="dark"?"light":"dark");
+
+/* data */
+let ALL=[],views={};const m=()=>$("#m");
+const byDate=a=>[...a].sort((x,y)=>String(y.date).localeCompare(String(x.date)));
+const cats=()=>[...new Set(ALL.map(o=>o.category))];
+const meta=o=>`<small>${esc(o.author||"NEWS7i")} · ${fd(o.date)}</small>`;
+const card=(o,badge)=>`<article class="card"><a class="im" href="#/a/${esc(o.id)}" tabindex="-1">${im(o.image,o.headline)}${o.type=="blog"?'<span class="bd">✍️ BLOG</span>':badge?`<span class="bd">${badge}</span>`:""}</a><div class="cb"><span class="ct">${ic(o.category)}${esc(o.category)}</span><h3>${esc(o.headline)}</h3><p>${esc(o.description)}</p>${meta(o)}<a class="btn" href="#/a/${esc(o.id)}">View</a></article>`.replace("</a></article>","</a></div></article>");
+const grid=a=>a.length?`<div class="grid">${a.map(o=>card(o)).join("")}</div>`:"";
+const sec=(t,h,more)=>h?`<section class="sc"><h2><span>${t}</span>${more?`<a href="${more}">See all</a>`:""}</h2>${h}</section>`:"";
+const chips=()=>`<div class="chips">${cats().map(c=>`<a href="#/c/${encodeURIComponent(c)}">${ic(c)}${esc(c)}</a>`).join("")}</div>`;
+const trend=a=>a.length?`<div class="trs">${a.map((o,i)=>`<a class="tr" href="#/a/${esc(o.id)}"><span class="nm">${String(i+1).padStart(2,0)}</span><div><h4>${esc(o.headline)}</h4><small>${ic(o.category)}${esc(o.category)} · ${fd(o.date)}</small></div></a>`).join("")}</div>`:"";
+const md=s=>esc(s).split(/\n{2,}/).map(p=>/^#{1,3} /.test(p)?`<h2>${p.replace(/^#+ /,"")}</h2>`:/^(- .*(\n|$))+$/.test(p)?`<ul>${p.split("\n").map(l=>`<li>${l.slice(2)}</li>`).join("")}</ul>`:`<p>${p.replace(/\n/g,"<br>")}</p>`).join("").replace(/\*\*(.+?)\*\*/g,"<b>$1</b>");
+
+/* layout: 1 big top story, 2nd + 3rd side by side, rest below */
+const section=(a,label)=>{if(!a.length)return'<p class="em">No stories yet.</p>';const s=byDate(a),[f,b,c,...r]=s;
+return`<article class="top card"><a class="im" href="#/a/${esc(f.id)}" tabindex="-1">${im(f.image,f.headline)}<span class="bd">🔥 LATEST</span></a><div class="cb"><span class="ct">${ic(f.category)}${esc(f.category)}</span><h3>${esc(f.headline)}</h3><p>${esc(f.description)}</p>${meta(f)}<a class="btn" href="#/a/${esc(f.id)}">View full story</a></div></article>`
++(b?`<div class="duo">${card(b,"2nd")}${c?card(c,"3rd"):""}</div>`:"")+(r.length?sec("More in "+label,grid(r)):"")};
+
+const home=()=>{const tr=ALL.filter(o=>o.trending),n=byDate(ALL.filter(o=>o.type!="blog")),bl=byDate(ALL.filter(o=>o.type=="blog")),tk=tr.map(o=>`<a href="#/a/${esc(o.id)}">${esc(o.headline)}</a>`).join("");
+return(tk?`<div class="strip"><b>⚡ BREAKING</b><div class="mq"><span>${tk}${tk}</span></div></div>`:"")+section(n.length?n:ALL,"News")+sec("🔥 Trending",trend(tr),"#/trending")+sec("🗂 Categories",chips())+sec("✍️ Latest Blogs",grid(bl.slice(0,3)),"#/blogs")+cats().slice(0,4).map(c=>sec(ic(c)+esc(c),grid(byDate(ALL.filter(o=>o.category==c)).slice(0,3)),"#/c/"+encodeURIComponent(c))).join("")};
+
+const art=id=>{const o=ALL.find(x=>x.id==id);if(!o)return'<p class="em">Story not found.</p>';document.title=o.headline+" | NEWS7i";
+views[id]=(views[id]||0)+1;
+const rel=ALL.filter(x=>x.id!=id&&x.category==o.category).slice(0,3),tg=String(o.tags||"").split(",").map(x=>x.trim()).filter(Boolean);
+return`<article class="ar"><a class="btn g" href="javascript:history.back()">‹ Back</a><br><br><span class="ct sans">${ic(o.category)}<a href="#/c/${encodeURIComponent(o.category)}">${esc(o.category)}</a>${o.type=="blog"?" · ✍️ BLOG":""}</span><h1>${esc(o.headline)}</h1>${meta(o)}<div class="im">${im(o.image,o.headline)}</div><div class="bd2">${md(o.content||o.description)}</div>${tg.length?`<div class="tgs">${tg.map(x=>`<a href="#/search/${encodeURIComponent(x)}">#${esc(x)}</a>`).join("")}</div>`:""}</article>`+sec("Related stories",grid(rel))};
+
+const srch=q=>{m().innerHTML=`<h1 class="ttl">🔍 Search</h1><input id="sq" class="si" placeholder="Search news &amp; blogs..." aria-label="Search" value="${esc(q)}"><div id="sr"></div>`;
+const run=()=>{const v=$("#sq").value.trim().toLowerCase(),r=$("#sr");if(!v)return r.innerHTML="";const a=ALL.filter(o=>[o.headline,o.description,o.category,o.tags].join(" ").toLowerCase().includes(v));r.innerHTML=a.length?grid(a):'<p class="em">No results found.</p>'};
+let T;$("#sq").oninput=()=>{clearTimeout(T);T=setTimeout(run,200)};$("#sq").focus();run()};
+
+const buildNav=a=>{$("#nav").innerHTML=[["#/","Home"],["#/news","News"],["#/blogs","Blogs"],["#/trending","Trending"],...cats().map(c=>["#/c/"+encodeURIComponent(c),ic(c)+esc(c)]),["#/search","🔍 Search"]].map(([h,t])=>`<a href="${h}" data-h="${h}">${t}</a>`).join("")};
+const route=()=>{const h=location.hash||"#/",[,p,x]=h.split("/"),v=x?decodeURIComponent(x):"";scrollTo(0,0);document.title="NEWS7i";
+document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.h==h||(h=="#/"&&a.dataset.h=="#/")));
+const t=s=>`<h1 class="ttl">${s}</h1>`;
+if(p=="a")m().innerHTML=art(v);
+else if(p=="c")m().innerHTML=t(ic(v)+esc(v))+section(ALL.filter(o=>o.category==v),v);
+else if(p=="news")m().innerHTML=t("📰 News")+section(ALL.filter(o=>o.type!="blog"),"News");
+else if(p=="blogs")m().innerHTML=t("✍️ Blogs")+section(ALL.filter(o=>o.type=="blog"),"Blogs");
+else if(p=="trending")m().innerHTML=t("🔥 Trending")+(ALL.some(o=>o.trending)?grid(ALL.filter(o=>o.trending)):'<p class="em">Nothing trending.</p>');
+else if(p=="search")srch(v);
+else m().innerHTML=home()};
+
+const fail=()=>{m().innerHTML=`<div class="em"><div style="font-size:3rem">⚠️</div><h2>Unable to load NEWS7i</h2><p>Check your connection, and keep news.json in the same folder.</p><br><button class="btn" id="rt">Retry</button></div>`;$("#rt").onclick=load};
+const load=async()=>{m().innerHTML='<div class="grid">'+Array(6).fill('<div class="card sk"></div>').join("")+"</div>";
+try{const r=await fetch(JSON_URL,{cache:"no-store"});if(!r.ok)throw 0;const j=await r.json();ALL=(j.news||j).map((o,i)=>({id:String(o.id??i+1),type:o.type||"news",...o}));
+buildNav();$("#hd").hidden=$("#ft").hidden=false;route()}catch{fail()}};
+addEventListener("hashchange",route);
+
+/* intro */
+let done;const end=()=>{if(done)return;done=1;$("#intro").classList.add("out")};
+$("#sk").onclick=end;setTimeout(end,2800);load();
+</script></body></html>

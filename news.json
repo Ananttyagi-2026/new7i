@@ -1,0 +1,149 @@
+{
+  "site": "NEWS7i",
+  "news": [
+    {
+      "id": "1",
+      "type": "news",
+      "headline": "India clinch thriller by 100 runs with a dominant batting display",
+      "description": "In cricket, India won by 100 runs after a record opening stand and a ruthless spell from the pace attack, sealing the series with a game to spare. The captain praised the team's discipline.",
+      "content": "India won by 100 runs after a record opening stand.\n\nThe pace attack then dismissed the opposition for under 200 and sealed the series with a game to spare.\n\n- Opening stand: 182 runs\n- Best bowling: 4 wickets for 31\n\nThe captain praised the team's **discipline** after the match.",
+      "image": "https://picsum.photos/seed/news7i1/900/500",
+      "date": "2026-10-04",
+      "category": "Sports",
+      "author": "NEWS7i Desk",
+      "trending": true
+    },
+    {
+      "id": "2",
+      "type": "news",
+      "headline": "Hockey squad storms into the final with a late penalty corner",
+      "description": "A last-minute penalty corner sent the national hockey team into the final after a tense semi-final that went down to the wire.",
+      "content": "A last-minute penalty corner sent the national hockey team into the final after a tense semi-final that went down to the wire.",
+      "image": "https://picsum.photos/seed/news7i2/900/500",
+      "date": "2026-10-03",
+      "category": "Sports",
+      "author": "NEWS7i Desk",
+      "trending": false
+    },
+    {
+      "id": "3",
+      "type": "news",
+      "headline": "Young shuttler lifts first international title in Denmark",
+      "description": "The 19-year-old beat the top seed in straight games to claim a maiden title, giving Indian badminton another reason to cheer.",
+      "content": "The 19-year-old beat the top seed in straight games to claim a maiden title, giving Indian badminton another reason to cheer.",
+      "image": "https://picsum.photos/seed/news7i3/900/500",
+      "date": "2026-10-01",
+      "category": "Sports",
+      "author": "NEWS7i Desk",
+      "trending": false
+    },
+    {
+      "id": "4",
+      "type": "news",
+      "headline": "New AI chip promises double the speed at half the power",
+      "description": "A new processor unveiled this week targets phones and laptops, claiming major gains in on-device AI tasks without draining the battery.",
+      "content": "A new processor unveiled this week targets phones and laptops, claiming major gains in on-device AI tasks without draining the battery.",
+      "image": "https://picsum.photos/seed/news7i4/900/500",
+      "date": "2026-10-04",
+      "category": "Technology",
+      "author": "NEWS7i Desk",
+      "trending": true
+    },
+    {
+      "id": "5",
+      "type": "news",
+      "headline": "Government rolls out faster 5G coverage across small towns",
+      "description": "Telecom operators will extend high-speed networks to over 300 towns by year end, according to a new rollout plan.",
+      "content": "Telecom operators will extend high-speed networks to over 300 towns by year end, according to a new rollout plan.",
+      "image": "https://picsum.photos/seed/news7i5/900/500",
+      "date": "2026-10-02",
+      "category": "Technology",
+      "author": "NEWS7i Desk",
+      "trending": false
+    },
+    {
+      "id": "6",
+      "type": "news",
+      "headline": "Smartphone makers shift to seven-year software support",
+      "description": "Several brands now promise long update cycles, a change that could reduce electronic waste and lower costs for buyers.",
+      "content": "Several brands now promise long update cycles, a change that could reduce electronic waste and lower costs for buyers.",
+      "image": "https://picsum.photos/seed/news7i6/900/500",
+      "date": "2026-09-30",
+      "category": "Technology",
+      "author": "NEWS7i Desk",
+      "trending": false
+    },
+    {
+      "id": "7",
+      "type": "news",
+      "headline": "Sensex gains as banking stocks lead a broad rally",
+      "description": "Markets closed higher on strong buying in banks and IT, with investors watching upcoming rate decisions closely.",
+      "content": "Markets closed higher on strong buying in banks and IT, with investors watching upcoming rate decisions closely.",
+      "image": "https://picsum.photos/seed/news7i7/900/500",
+      "date": "2026-10-04",
+      "category": "Business",
+      "author": "NEWS7i Desk",
+      "trending": true
+    },
+    {
+      "id": "8",
+      "type": "news",
+      "headline": "Start-up funding rebounds in the third quarter",
+      "description": "Venture investment rose compared with the previous quarter, led by climate, fintech and AI companies.",
+      "content": "Venture investment rose compared with the previous quarter, led by climate, fintech and AI companies.",
+      "image": "https://picsum.photos/seed/news7i8/900/500",
+      "date": "2026-10-02",
+      "category": "Business",
+      "author": "NEWS7i Desk",
+      "trending": false
+    },
+    {
+      "id": "9",
+      "type": "news",
+      "headline": "Monsoon withdrawal begins from central India",
+      "description": "The weather office said the monsoon has started retreating from parts of Madhya Pradesh, with clear skies expected over the coming week.",
+      "content": "The weather office said the monsoon has started retreating from parts of Madhya Pradesh, with clear skies expected over the coming week.",
+      "image": "https://picsum.photos/seed/news7i9/900/500",
+      "date": "2026-10-05",
+      "category": "India",
+      "author": "NEWS7i Desk",
+      "trending": true
+    },
+    {
+      "id": "10",
+      "type": "blog",
+      "headline": "Five simple habits doctors say protect your heart",
+      "description": "From daily walks to better sleep, specialists share small changes that add up to a healthier heart over time.",
+      "content": "From daily walks to better sleep, specialists share small changes that add up to a healthier heart over time.",
+      "image": "https://picsum.photos/seed/news7i10/900/500",
+      "date": "2026-10-03",
+      "category": "Health",
+      "author": "NEWS7i Desk",
+      "trending": false
+    },
+    {
+      "id": "11",
+      "type": "blog",
+      "headline": "How I plan a budget trip across Rajasthan in a week",
+      "description": "A day-by-day plan covering forts, food and trains, with tips to keep the whole trip under a modest budget.",
+      "content": "A day-by-day plan covering forts, food and trains, with tips to keep the whole trip under a modest budget.",
+      "image": "https://picsum.photos/seed/news7i11/900/500",
+      "date": "2026-10-01",
+      "category": "Travel",
+      "author": "NEWS7i Desk",
+      "trending": false
+    },
+    {
+      "id": "12",
+      "type": "news",
+      "headline": "Space agency tests reusable booster in a new landing trial",
+      "description": "Engineers say the latest trial brought the booster down within metres of target, a step toward cheaper launches.",
+      "content": "Engineers say the latest trial brought the booster down within metres of target, a step toward cheaper launches.",
+      "image": "https://picsum.photos/seed/news7i12/900/500",
+      "date": "2026-09-29",
+      "category": "Science",
+      "author": "NEWS7i Desk",
+      "trending": false
+    }
+  ]
+}
